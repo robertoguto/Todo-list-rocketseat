@@ -6,6 +6,10 @@
   margin-top: calc(0px - 1.687rem);
 }
 
+.taskListContainer {
+  margin-top: 4rem;
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 87.5%;

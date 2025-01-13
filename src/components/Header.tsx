@@ -3,8 +3,8 @@ import todoLogo from '../assets/todo-logo.svg';
 
 export function Header() {
   return (
-      <div className={style.header}>
+      <header className={style.mainHeader}>
         <img src={todoLogo} alt="Todo Logo" />
-      </div>
+      </header>
   );
 }

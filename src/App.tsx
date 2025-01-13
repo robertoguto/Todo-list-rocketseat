@@ -1,17 +1,30 @@
-import { Header } from './components/Header';
+import { Header } from "./components/Header";
+import { AddTask } from "./components/AddTask";
+import { ListHeader } from './components/ListTask/ListHeader';
+import { List } from './components/ListTask/List';
+import { EmptyList } from './components/ListTask/EmptyList';
 
-import style from './App.module.css';
-import './global.css';
-import { AddTask } from './components/AddTask';
+import style from "./App.module.css";
+import "./global.css";
 
 export function App() {
   return (
-    <div>
+    <main>
       <Header />
 
-      <div className={style.container}>
-          <AddTask />
-      </div>
-    </div>
-  )
+      <section className={style.container}>
+        <AddTask />
+
+        <div className={style.taskListContainer}>
+          <ListHeader />
+
+          {false ? (
+            <List />
+          ) : (
+            <EmptyList />
+          )}
+        </div>
+      </section>
+    </main>
+  );
 }

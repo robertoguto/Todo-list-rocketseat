@@ -1,0 +1,33 @@
+.listHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.labelAndCounter {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.labelAndCounter > strong {
+  font-size: 0.875rem;
+  color: var(--gray-100);
+}
+
+.labelAndCounter:first-child > strong {
+  color: var(--blue);
+}
+
+.labelAndCounter:last-child > strong {
+  color: var(--purple);
+}
+
+.labelAndCounter .counter {
+  padding: 0.125rem 0.5rem;
+  border-radius: 100px;
+
+  background-color: var(--gray-400);
+  font-size: 0.75rem;
+  color: var(--gray-200);
+}
