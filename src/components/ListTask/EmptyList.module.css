@@ -1,0 +1,24 @@
+.emptyContainer {
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+  padding: 4rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  color: var(--gray-300);
+}
+
+.emptyContainer > svg {
+  width: 3.5rem;
+  height: 3.5rem;
+  fill: var(--gray-400);
+}
+
+.emptyContainer > p {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+}
