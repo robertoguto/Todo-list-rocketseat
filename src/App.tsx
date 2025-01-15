@@ -1,7 +1,7 @@
 import { Header } from "./components/Header";
 import { AddTask } from "./components/AddTask";
 import { ListHeader } from './components/ListTask/ListHeader';
-import { List } from './components/ListTask/List';
+import { Task } from './components/ListTask/Task';
 import { EmptyList } from './components/ListTask/EmptyList';
 
 import style from "./App.module.css";
@@ -18,8 +18,13 @@ export function App() {
         <div className={style.taskListContainer}>
           <ListHeader />
 
-          {false ? (
-            <List />
+          {true ? (
+            <div className={style.taskBox}>
+              <Task />
+              <Task />
+              <Task />
+              <Task />
+            </div>
           ) : (
             <EmptyList />
           )}
