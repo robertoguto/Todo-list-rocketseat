@@ -17,12 +17,7 @@ export function Task({ task, taskDelete, taskChecked}: ITaskProp) {
   }
 
   function handleTaskChecked() {
-    const newTask: ITask = {
-      ...task,
-      isChecked: !task.isChecked
-    }
-
-    taskChecked(newTask);
+    taskChecked(task);
   }
 
   const taskIdAndFor = `taskCheckbox${task.id}`

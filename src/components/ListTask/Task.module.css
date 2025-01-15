@@ -59,6 +59,7 @@
 
 .task .checkboxAndText > input[type="checkbox"]:checked ~ p {
   text-decoration: line-through;
+  color: var(--gray-300);
 }
 
 .task .deleteButton {

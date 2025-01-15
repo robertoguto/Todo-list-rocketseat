@@ -38,7 +38,7 @@ export function App() {
   function taskChecked(taskSelect: ITask) {
     const updateCheckedTasks = tasks.map((task) => {
       if (task.id === taskSelect.id) {
-        return { ...task, isChecked: taskSelect.isChecked }
+        return { ...task, isChecked: !taskSelect.isChecked }
       }
 
       return { ...task }
